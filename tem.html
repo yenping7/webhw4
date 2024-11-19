@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>勵志論－專輯回饋表</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div class="tit">
+      <a id="hh" href="./index.html" target="_self">Crowd Lu</a>
+      <br />
+      <a id="ee" href="./tem.html" target="_self">意見回饋表單</a>
+      <a
+        id="ee"
+        href="https://www.youtube.com/watch?v=_shqBFlDb-4&list=PL4Y4lF8hpBDQBXH1bNsGp4ona8FOMrSAI&index=12"
+        >全專輯試聽</a
+      >
+      <a id="ee" href="https://www.instagram.com/captain.lu/">Instagram</a>
+      <hr />
+      <br />
+    </div>
+
+    <div class="cover">
+      <img id="pic" width="500" height="500" src="./勵志.webp" alt="CrowdLu" />
+    </div>
+    <h1 id="feedback">專輯意見回饋表單</h1>
+    <div class="for">
+      <form action="" method="POST">
+        <label for="Account">姓名: </label>
+        <input id="Account" type="text" name="id" required />
+        <br />
+        <label for="phone">電話: </label>
+        <input id="phone" type="text" name="number" />
+        <br />
+        <label for="email">E-Mail: </label>
+        <input id="email" type="email" name="email" required />
+        <br />
+        <input id="male" type="radio" name="gender" value="male" required />
+        <label for="male">男性</label>
+        <input id="female" type="radio" name="gender" value="female" />
+        <label for="female">女性</label>
+        <input id="other" type="radio" name="gender" value="other" />
+        <label for="other">其他</label>
+        <br />
+        <label for="birthday">生日: </label>
+        <input
+          id="birthday"
+          type="date"
+          name="bday"
+          value="2020-12-24"
+          min="1900-01-01"
+          required
+        />
+        <br />
+        <label for="area">地區： </label>
+        <input list="arealist" type="text" name="area" id="area" />
+        <datalist id="arealist">
+          <option value="基隆">基隆</option>
+          <option value="新北">新北</option>
+          <option value="台北">台北</option>
+          <option value="桃園">桃園</option>
+          <option value="新竹">新竹</option>
+          <option value="苗栗">苗栗</option>
+          <option value="台中">台中</option>
+          <option value="彰化">彰化</option>
+          <option value="南投">南投</option>
+          <option value="雲林">雲林</option>
+          <option value="台南">台南</option>
+          <option value="高雄">高雄</option>
+          <option value="屏東">屏東</option>
+          <option value="台東">台東</option>
+          <option value="花蓮">花蓮</option>
+          <option value="宜蘭">宜蘭</option>
+        </datalist>
+        <br />
+        <label for="favorite">最喜愛的歌曲： </label>
+        <select name="favorite" id="favorite" required>
+          <option></option>
+          <option value="c'mon">勵志論</option>
+          <option value="inpeace">自我的介紹</option>
+          <option value="uWEATHER">雨時多雲偶陣晴</option>
+          <option value="CrazyDisco">狂迪</option>
+          <option value="ThereYouAre">像你</option>
+          <option value="MySoulMemory">肌肉的記憶</option>
+          <option value="iRipple">輕輕</option>
+          <option value="ASKYinYang">冒煙的燈泡</option>
+          <option value="LetGo">明年</option>
+          <option value="Heroes">英雄</option>
+        </select>
+        <hr />
+        <label for="talking"
+          >對於盧廣仲 Crowd Lu 【勵志論 healism】的回饋：</label
+        >
+        <br />
+        <textarea
+          name="talking"
+          id="talking"
+          cols="50"
+          rows="15"
+          placeholder="感謝您的回饋！"
+        ></textarea>
+        <br />
+        <input id="checkbox" type="checkbox" name="awake" value="yes" />
+        <label for="checkbox">我意識清楚</label>
+        <br />
+      </form>
+      <button type="button" onclick="myFunc()">送出</button>
+    </div>
+  </body>
+</html>
